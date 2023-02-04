@@ -1,0 +1,6 @@
+<div *ngIf="sectionList.length === 0">
+    <p> <i class="pi pi-arrow-left"></i> No Section here ..You can Add </p>
+</div>
+<div *ngIf="sectionList.length > 0">
+    <app-section-item *ngFor="let section of sectionList" [sectionFromParent]="section"></app-section-item>
+</div>
